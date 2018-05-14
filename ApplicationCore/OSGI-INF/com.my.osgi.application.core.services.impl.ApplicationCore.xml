@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" deactivate="deactivate" immediate="true" name="com.my.osgi.application.core.services.impl.ApplicationCore">
+   <service>
+      <provide interface="com.my.osgi.application.core.services.IApplicationCore"/>
+   </service>
+   <implementation class="com.my.osgi.application.core.services.impl.ApplicationCore"/>
+</scr:component>
