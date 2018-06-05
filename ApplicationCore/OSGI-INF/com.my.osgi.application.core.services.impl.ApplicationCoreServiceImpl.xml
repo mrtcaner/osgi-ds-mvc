@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" deactivate="deactivate" immediate="true" name="com.my.osgi.application.core.services.impl.ApplicationCoreServiceImpl">
+   <service>
+      <provide interface="com.my.osgi.application.core.services.IApplicationCoreService"/>
+   </service>
+   <reference bind="setToolBarService" cardinality="1..1" interface="com.my.osgi.application.toolbar.services.IToolBarService" name="ToolBarService" policy="static" unbind="unsetToolBarService"/>
+   <implementation class="com.my.osgi.application.core.services.impl.ApplicationCoreServiceImpl"/>
+</scr:component>
