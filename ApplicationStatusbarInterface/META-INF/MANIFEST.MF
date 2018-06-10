@@ -4,3 +4,4 @@ Bundle-Name: ApplicationStatusbarInterface
 Bundle-SymbolicName: ApplicationStatusbarInterface
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.my.osgi.application.statusbar.services

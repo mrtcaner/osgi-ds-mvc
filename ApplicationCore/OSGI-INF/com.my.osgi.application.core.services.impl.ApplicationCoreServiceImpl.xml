@@ -3,6 +3,8 @@
    <service>
       <provide interface="com.my.osgi.application.core.services.IApplicationCoreService"/>
    </service>
+   <reference bind="setConfigurationService" cardinality="1..1" interface="com.my.osgi.application.common.util.IApplicationConfigurationService" name="ConfigurationService" policy="static" unbind="unsetConfigurationService"/>
+   <reference bind="setStatusBarService" cardinality="1..1" interface="com.my.osgi.application.statusbar.services.IStatusBarService" name="StatusBarService" policy="static" unbind="unsetStatusBarService"/>
    <reference bind="setToolBarService" cardinality="1..1" interface="com.my.osgi.application.toolbar.services.IToolBarService" name="ToolBarService" policy="static" unbind="unsetToolBarService"/>
    <implementation class="com.my.osgi.application.core.services.impl.ApplicationCoreServiceImpl"/>
 </scr:component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="com.my.osgi.application.common.services.impl.ApplicationConfigurationServiceImpl">
+   <service servicefactory="true">
+      <provide interface="com.my.osgi.application.common.util.IApplicationConfigurationService"/>
+   </service>
+   <implementation class="com.my.osgi.application.common.services.impl.ApplicationConfigurationServiceImpl"/>
+</scr:component>

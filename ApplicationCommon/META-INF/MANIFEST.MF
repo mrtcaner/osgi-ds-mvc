@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ApplicationCommon
+Bundle-SymbolicName: ApplicationCommon
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: com.my.osgi.application.common.services,
+ com.my.osgi.application.common.util,
+ org.osgi.service.component.annotations;version="1.2.0"
+Service-Component: OSGI-INF/com.my.osgi.application.common.services.impl.ApplicationConfigurationServiceImpl.xml
+Bundle-ActivationPolicy: lazy

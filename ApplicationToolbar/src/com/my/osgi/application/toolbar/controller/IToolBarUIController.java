@@ -4,6 +4,6 @@ import javax.swing.JToolBar;
 
 public interface IToolBarUIController {
 
-	public JToolBar createToolBar();
+	JToolBar getToolBar();
 	
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" deactivate="deactivate" name="com.my.osgi.application.statusbar.services.impl.StatusBarServiceImpl">
+   <property name="event.topics" value="com/my/osgi/app/statusbar/*"/>
+   <service>
+      <provide interface="com.my.osgi.application.statusbar.services.IStatusBarService"/>
+      <provide interface="org.osgi.service.event.EventHandler"/>
+   </service>
+   <reference bind="setConfigurationService" cardinality="1..1" interface="com.my.osgi.application.common.util.IApplicationConfigurationService" name="ConfigurationService" policy="static" unbind="unsetConfigurationService"/>
+   <implementation class="com.my.osgi.application.statusbar.services.impl.StatusBarServiceImpl"/>
+</scr:component>
