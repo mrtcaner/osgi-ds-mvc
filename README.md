@@ -1,7 +1,8 @@
 # osgi-ds-swing-mvc
-- Just created the project. Not coded much for now
+- Added three plugins and a simple user interface. Used MVC, ds and event admin for now.
 
 ## future work
+- r-osgi support using ds
 - maven integration
 - reactive srtream
 - Kafka support
